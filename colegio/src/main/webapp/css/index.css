@@ -1,0 +1,82 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #f0f4f8;
+	/* Fondo suave y claro para mayor luminosidad */
+}
+
+header {
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	color: #2563eb; /* Azul vibrante en lugar de purple */
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.resultados {
+	margin-top: 2em;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+}
+
+.dropbtn {
+	background-color: #3b82f6;
+	/* Azul primario moderno (tailwind blue-500) */
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.1em;
+	transition: background-color 0.3s ease; /* Suave transición */
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff; /* Blanco puro para mayor contraste */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+	border-radius: 8px; /* Bordes redondeados para modernidad */
+	overflow: hidden;
+}
+
+.dropdown-content a {
+	color: #1e293b; /* Gris oscuro elegante */
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+	background-color: #eff6ff;
+	/* Azul muy claro al hover, combina con el botón */
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #1d4ed8; /* Azul más oscuro y vibrante al hover */
+}

@@ -1,0 +1,34 @@
+input {
+	width: 20%;
+	padding: 1px 2px;
+	margin: 0.5em 0;
+	box-sizing: border-box;
+	border: 2px solid #3b82f6;
+	/* Borde azul primario coherente con el botón */
+	border-radius: 6px; /* Bordes redondeados para modernidad */
+	background-color: #ffffff; /* Fondo blanco limpio */
+	color: #1e293b; /* Texto gris oscuro elegante */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+	outline: none;
+	border-color: #1d4ed8; /* Azul más intenso al foco */
+	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Sombra suave azul */
+}
+
+.form {
+	margin-top: 5px;
+	margin: 5px 0 5px auto;
+	/* Corregí la sintaxis: auto solo en margin-right */
+	padding: 1.5em; /* Añadí padding interno para mejor aspecto */
+	border: 2px solid #3b82f6; /* Borde azul en lugar del naranja */
+	border-radius: 12px; /* Bordes redondeados generosos */
+	background-color: #f8fafc; /* Fondo muy claro azulado para suavidad */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	/* Sombra sutil para profundidad */
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,40 @@
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border-radius: 12px; /* Bordes redondeados en la tabla */
+	overflow: hidden;
+	/* Necesario para que los bordes redondeados funcionen */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	/* Sombra suave para profundidad */
+}
+
+td, th {
+	border: 1px solid #e2e8f0;
+	/* Borde gris muy claro en lugar de #dddddd */
+	text-align: left;
+	padding: 12px; /* Un poco más de padding para mayor comodidad */
+}
+
+th {
+	background-color: #3b82f6;
+	/* Azul primario vibrante para las cabeceras */
+	color: white; /* Texto blanco para buen contraste */
+	font-weight: bold;
+	text-transform: uppercase;
+	/* Opcional: mayúsculas para look más profesional */
+	letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+	background-color: #f8fafc; /* Fondo muy claro azulado en filas pares */
+}
+
+tr:nth-child(odd) {
+	background-color: #ffffff; /* Blanco puro en filas impares */
+}
+
+tr:hover {
+	background-color: #eff6ff; /* Hover sutil en azul muy claro */
+	transition: background-color 0.2s ease;
+}

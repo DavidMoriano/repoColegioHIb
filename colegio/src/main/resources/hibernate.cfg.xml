@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Configuracion JDBC para el acceso a la BBDD -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/colegio</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">PracticaRoot</property> <!-- Aqui pon tu contraseña -->
+		<property name="connection.pool_size">1</property>
+		<!-- Dialecto SQL a usar, cada BBDD (Oracle,MySQL, Postgresql) tienen el 
+			suyo -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- Con esta configuracion nos saldrá por consola las sentencias SQL que 
+			se envian a la BBDD -->
+		<property name="show_sql">true</property>
+		<!-- Con esta configuracion nos saldrá por consola las sentencias SQL de 
+			una forma más legible -->
+		<property name="format_sql">true</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.connection.pool_size">5</property>
+		<mapping class="entities.MunicipiosEntity"></mapping>
+		<mapping class="entities.AlumnoEntity"></mapping>
+		<mapping class="entities.MatriculacionEntity"></mapping>
+		<mapping class="entities.AsignaturaEntity"></mapping>
+		<mapping class="entities.NotaEntity"></mapping>
+		<mapping class="entities.CajaEntity"></mapping>
+	</session-factory>
+</hibernate-configuration>
